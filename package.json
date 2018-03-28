@@ -1,0 +1,22 @@
+{
+  "name": "wikipedia-api-chakram-automation-test",
+  "version": "0.0.1",
+  "description": "To test the Wikipedia API using Chakram",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chakram": "^1.5.0",
+    "config": "^1.30.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.x",
+    "mocha-parallel-tests": "^2.0.0-alpha.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abbas Jaffery",
+  "license": "ISC"
+}
