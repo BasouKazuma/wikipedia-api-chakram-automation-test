@@ -1,6 +1,6 @@
 # Tests for Wikipedia API using Chakram
 
-This project is for running automation tests against the [Wikipedia API](https://en.wikipedia.org/w/api.php).
+This project is for running automation tests against the [Wikipedia API](https://en.wikipedia.org/w/api.php) using the [Chakram](http://dareid.github.io/chakram/) framework.
 
 ## Setup
 
@@ -14,6 +14,6 @@ This project is for running automation tests against the [Wikipedia API](https:/
 
 `mocha tests/`
 
-### Parallel
+### Parallel with Retry
 
 `./node_modules/.bin/mocha-parallel-tests tests --max-parallel 10 --retry 5`
