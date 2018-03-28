@@ -2,6 +2,10 @@
 
 This project is for running automation tests against the [Wikipedia API](https://en.wikipedia.org/w/api.php) using the [Chakram](http://dareid.github.io/chakram/) framework.
 
+## Notes
+
+* Run all commands below from the root directory of the project
+
 ## Setup
 
 * Install Node.js - ([download](https://nodejs.org/en/download/))
