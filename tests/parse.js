@@ -4,7 +4,7 @@ var config = require('config');
 expect = chakram.expect;
 
 describe("Parse - Main Page", function() {
-    it("should be properly formatted", function () {
+    it("should be properly formatted @web @full-suite", function () {
     	  pageName = "Main Page";
         return chakram.get(
         	  config.get('base_url')
