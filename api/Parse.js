@@ -1,4 +1,4 @@
-const BaseAPI = require('../api/BaseAPI');
+const BaseAPI = require('../api/BaseAPI')
 
 class Parse extends BaseAPI {
 

@@ -1,5 +1,5 @@
-const chakram = require('chakram');
-const config = require('config');
+const chakram = require('chakram')
+const config = require('config')
 
 class BaseAPI {
 
@@ -24,7 +24,7 @@ class BaseAPI {
         qs = qs + '&' + keys[i] + '=' + this.queryString[keys[i]]
       }
     }
-    return qs;
+    return qs
   }
 
   getRequest() {
