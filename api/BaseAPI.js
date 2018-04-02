@@ -7,6 +7,7 @@ class BaseAPI {
     this.endpoint = ""
     this.queryString = {}
     this.parameters = {}
+    this.requestOptions = {}
   }
 
   generateURL () {
@@ -28,11 +29,11 @@ class BaseAPI {
   }
 
   getRequest() {
-    return chakram.get(this.generateURL())
+    return chakram.get(this.generateURL(), this.requestOptions)
   }
 
   postRequest() {
-    return chakram.post(this.generateURL(), this.parameters)
+    return chakram.post(this.generateURL(), this.parameters, this.requestOptions)
   }
 
 }

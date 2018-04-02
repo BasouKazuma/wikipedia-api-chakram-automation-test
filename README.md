@@ -11,13 +11,15 @@ This project is for running automation tests against the [Wikipedia API](https:/
 * Install Node.js - ([download](https://nodejs.org/en/download/))
 * Install Mocha - `npm install -g mocha`
 * Install project dependencies - `npm install`
+* Add a `config/defaults.json` by copying from `config/defaults.sample.json` and updating the necessary fields
+  * Note: You have to use the [Wikipedia Special:BotPasswords](https://en.wikipedia.org/wiki/Special:BotPasswords) page to create a username and password for the test_user and test_password.
 
 ## Run Tests
 
 ### One at a time
 
-`mocha tests/`
+`mocha tests/ --grep @full-suite`
 
 ### Parallel with Retry
 
-`./node_modules/.bin/mocha-parallel-tests tests --max-parallel 10 --retry 5`
+`./node_modules/.bin/mocha-parallel-tests tests/ --max-parallel 10 --retry 5 --grep @full-suite`
