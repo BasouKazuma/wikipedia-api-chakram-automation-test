@@ -1,6 +1,6 @@
 {
   "name": "wikipedia-api-chakram-automation-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "To test the Wikipedia API using Chakram",
   "main": "index.js",
   "directories": {

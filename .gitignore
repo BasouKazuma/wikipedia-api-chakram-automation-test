@@ -3,6 +3,3 @@
 
 # Node
 node_modules/
-
-# Project Specific
-config/default.json

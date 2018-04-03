@@ -5,6 +5,8 @@ const config = require('config')
 
 expect = chakram.expect
 
+test_user = require('./test_user.json');
+
 describe("Mobile - Login", function() {
     it("should be properly formatted @broken", function () {
         chakram.setRequestDefaults({jar: true})
@@ -12,8 +14,8 @@ describe("Mobile - Login", function() {
         return token.getRequest()
         .then(function(tokenResponse) {
             let login = new Login(
-                config.get('test_user'),
-                config.get('test_password'),
+                test_user.username,
+                test_user.password,
                 null,
                 tokenResponse.body.query.tokens.logintoken
             )
@@ -28,8 +30,8 @@ describe("Mobile - Login", function() {
     it("should require a token @mobile @full-suite", function () {
         chakram.setRequestDefaults({jar: true})
         let login = new Login(
-            config.get('test_user'),
-            config.get('test_password'),
+            test_user.username,
+            test_user.password,
             null,
             null
         )
